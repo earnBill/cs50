@@ -86,3 +86,19 @@ form {
 .searchButtons:hover {
     border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.h1Advanced {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+}
+.line {
+    border-bottom: 1px solid #ebebeb
+}
+.h2Advanced {
+    font-size: 16px;
+    color: #333333;
+}
+.divAdvanced {
+    margin: 50px;
+}
