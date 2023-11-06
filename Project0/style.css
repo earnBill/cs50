@@ -5,9 +5,23 @@
     font-family: Roboto, Arial,sans-serif;
     font-size: 13px;
 }
+body {
+    margin: 10px;
+}
+
+
 nav {
+    width: 100%;
+    outline: 1px solid red;   
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+}
+nav::before {
+    width: 100%;
+    content: url("images/googlelogo.png");
+    
 }
 nav a {
     margin: 10px;
@@ -19,26 +33,27 @@ nav a:hover {
     text-decoration: underline;
 }
 nav span {
-    margin: 15px;
-    margin-top: 18px;
+    margin-top: 10px;
     color: rgba(0, 0, 0, 0.8);
     font-weight: 800;
 }
 main {
-    height: 70vh;
-    justify-content: center;
+    height: 70vh; 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
+    
 }
 main img {
     height: 92px;
+    width: 272px;
+    
 }
 form {
     margin: 20px;
 }
 #search{
-     display: flex;
+    display: flex;
     z-index: 3;
     position: relative;
     min-height: 44px;
@@ -90,7 +105,7 @@ form {
 .h1Advanced {
     color: #d93025;
     font-size: 20px;
-    margin: 25px 35px;
+    margin: 25px 20px;
 }
 .line {
     border-bottom: 1px solid #ebebeb
@@ -100,5 +115,74 @@ form {
     color: #333333;
 }
 .divAdvanced {
-    margin: 50px;
+    margin: 20px;
+}
+
+.advInput {
+    display: flex;
+    align-items: center;
+}
+.advInput input {
+    width: 300px;
+    height: 25px;
+    outline:none;
+}
+.left {
+   width: 200px;
+   margin: 5px 0;
+}
+.right {
+    margin: 5px 0;
+}
+
+.advInput input:focus {
+    outline: 0.5px solid rgba(0, 0, 255, 0.5);
+}
+.button {
+    display: flex;
+    justify-content: flex-end;
+    width: 500px;
+    margin: 5px 0;
+}
+form #button {
+    height: 30px;
+    box-shadow: none;
+    background-color: #4d90fe;
+    
+    border: 1px solid #3079ed;
+    color: #fff;
+    min-width: 120px;
+    padding: 0 12px;
+    border-radius: 2px;
+    cursor: default;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.button #button:hover {
+    background-color: #357ae8;
+    
+}
+.button #button:active {
+    background-color: #357ae8;   
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img {
+    height: 24px;
+}
+.logo {
+    padding: 10px;
+}
+.nav .menu {
+    display: flex;
+    align-items: center;
+}
+.menu a, span {
+    margin: 5px;
 }

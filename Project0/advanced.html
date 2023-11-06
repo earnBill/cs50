@@ -8,22 +8,66 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
 </head>
-    </style>
-    <body>
-    <header>
-        <nav>
+    
+<body>
+<header>
+    <div class="nav">
+        <div class="logo">
+            <img src="images/googlelogo.png" alt="googleLogo">
+        </div>
+        <div class="menu">
             <a href="index.html">Google</a>
             <span class="material-symbols-outlined">
                 apps
             </span>
             <a href="#" id="signIn">Sign in</a>
-        </nav>
-            <p class="h1Advanced">Advanced Search</p>
-            <div class="line"></div>
-            <div class="divAdvanced">
-                <p class="h2Advanced">Find pages with...</p>
+        </div>
+    </div>
+</header>
+
+    <p class="h1Advanced">Advanced Search</p>
+    <div class="line"></div>
+    <div class="divAdvanced">
+        <p class="h2Advanced">Find pages with...</p>
+    </div>
+    <form action="https://google.com/search">
+        <div class="advInput">
+            <div class="left">
+                <label for="allWords">all these words:</label>
             </div>
-        </main>
-    </header>
+            <div class="right">
+                <input type="text" id="allWords" name="as_q">
+            </div>
+        </div>
+        <div class="advInput">
+            <div class="left">
+                <label for="secRow">this exact word or phrase:</label>
+            </div>
+            <div class="right">
+                <input type="text" id="secRow" name="as_epq">
+            </div>
+        </div>
+        <div class="advInput">
+            <div class="left">
+                <label for="thirdRow">any of these words:</label>
+            </div>
+             <div class="right">
+                 <input type="text" id="thirdRow" name="as_oq">
+                </div>
+            </div>
+        <div class="advInput">
+            <div class="left">
+                <label for="forthRow">none of there words:</label>
+            </div>
+               <div class="right">
+                   <input type="text" id="forthRow" name="as_eq">
+               </div>
+        </div>
+        <div class="button">
+            <input type="submit" value="Advanced Search" id="button">
+        </div>
+    </form>
+            
+
 </body>
 </html>
