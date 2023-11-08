@@ -11,12 +11,20 @@ body {
 
 
 nav {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 100%;  
+>>>>>>> 838caa5a9db0e8dc69ccf4c1d1fbbdd1415eb47d
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 10px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 838caa5a9db0e8dc69ccf4c1d1fbbdd1415eb47d
 nav a {
     margin: 10px;
     margin-top: 20px;
