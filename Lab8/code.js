@@ -4,11 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function resetColor() {
         console.log('reset')
 
-        document.getElementsByClassName('answers').forEach(answers => {
-            amswers.style.backgroundColor = 'yellow'
-        }) 
+        let elements = document.getElementsByClassName('answers') 
 
-       
+        for (let i = 0; i < elements.length; i++)
+            elements[i].style.backgroundColor = "lightgray"    
     }
 
     console.log('ready')
